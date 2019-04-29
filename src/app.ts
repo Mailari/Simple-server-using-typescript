@@ -2,9 +2,9 @@ import * as express from "express";
 
 import * as bodyParser from "body-parser";
 import * as bookController from "./controller/bookController";
-const app = express();
+export const app = express();
 
-app.set("port", 3000);
+app.set("port", 3100);
 app.use(bodyParser.json());
 
 app.listen(app.get("port"), () => {
